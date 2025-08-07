@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dharampeth Institute Of Admission</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        input, select, textarea, button {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Admission Form</h1>
+        <form action="Admission.php" method="post">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+            <label for="course">Select Course:</label>
+            <select id="course" name="course" required>
+                <option value="">-- Select Course --</option>
+                <option value="bba">Mechanical Engineering</option>
+                <option value="bcom">Electrical Engineering</option>
+                <option value="mba">Electronics and Communication Engineering.</option>
+                <option value="mcom">Information Technology</option>
+                <option value="mcom">Aeronautical Engineering</option>
+                <option value="mcom">Automobile Engineering</option>
+                <option value="mcom">Computer Science and Engineering(AI and ML)</option>
+                <option value="mcom">Computer Science and Engineering(Cybersecurity)</option>
+            </select>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="4" placeholder="Enter your address" required></textarea>
+
+            <label for="documents">Upload Documents:</label>
+            <input type="file" id="documents" name="documents" accept=".pdf,.jpg,.png" required>
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </div>
+
+    <div class="footer">
+        &copy; 2025 Dharampeth Institute. All rights reserved.
+    </div>
+</body>
+</html>
